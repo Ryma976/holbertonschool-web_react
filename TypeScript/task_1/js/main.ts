@@ -19,12 +19,10 @@ export const printTeacher: printTeacherFunction = (firstName: string, lastName: 
   return `${firstName.charAt(0)}. ${lastName}`;
 };
 
-// Interface describing the StudentClass constructor
 export interface StudentClassConstructorInterface {
   new (firstName: string, lastName: string): StudentClassInterface;
 }
 
-// Interface describing the StudentClass methods and properties
 export interface StudentClassInterface {
   firstName: string;
   lastName: string;
@@ -32,7 +30,6 @@ export interface StudentClassInterface {
   displayName(): string;
 }
 
-// StudentClass Implementation
 export class StudentClass implements StudentClassInterface {
   firstName: string;
   lastName: string;
@@ -50,29 +47,3 @@ export class StudentClass implements StudentClassInterface {
     return this.firstName;
   }
 }
-
-const teacher3: Teacher = {
-  firstName: 'John',
-  fullTimeEmployee: false,
-  lastName: 'Doe',
-  location: 'London',
-  contract: false,
-};
-
-console.log(teacher3);
-
-const director1: Directors = {
-  firstName: 'John',
-  lastName: 'Doe',
-  location: 'London',
-  fullTimeEmployee: true,
-  numberOfReports: 17,
-};
-
-console.log(director1);
-
-console.log(printTeacher("John", "Doe"));
-
-const student = new StudentClass("Reem", "Ahmed");
-console.log(student.displayName());
-console.log(student.workOnHomework());
