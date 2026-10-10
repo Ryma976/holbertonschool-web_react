@@ -57,7 +57,6 @@ export function executeWork(employee: Director | Teacher): string {
   }
 }
 
-// Task 7: String literal types
 export type Subjects = 'Math' | 'History';
 
 export function teachClass(todayClass: Subjects): string {
@@ -66,6 +65,3 @@ export function teachClass(todayClass: Subjects): string {
   }
   return 'Teaching History';
 }
-
-console.log(teachClass('Math'));
-console.log(teachClass('History'));
