@@ -1,3 +1,3 @@
 # Holberton School Web React - TypeScript
 
-This repository contains solutions for the TypeScript modules and tasks.
+This repository contains all projects and tasks for the TypeScript module.
